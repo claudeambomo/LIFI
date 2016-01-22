@@ -2,13 +2,16 @@ package com.example.arnoldfotsing.myapplifiproto;
 
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.support.*;
 import android.view.Menu;
 import android.view.MenuItem;
 
 public class MainActivity extends ActionBarActivity {
         //Commentaire claude
         //commentaire encore claude
-        int a = 1;
+        //Commentaire hassan
+        //commentaire encore Hqqssqn
+    int a = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
