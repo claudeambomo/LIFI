@@ -7,6 +7,8 @@ import android.view.MenuItem;
 
 public class MainActivity extends ActionBarActivity {
         //Commentaire claude
+        //commentaire encore claude
+        int a = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
