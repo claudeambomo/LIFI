@@ -132,13 +132,18 @@ public class LabyrintheEngine {
             mBlocks.add(new Bloc(Type.TROU, 55, counter));
 
         }
-
+        //Début de la ligne 12
         for (int counter = 0; counter < 3; counter++) {
             mBlocks.add(new Bloc(Type.TROU, 12, counter));
         }
-        for (int counter = 7; counter < 15; counter++) {
+        for (int counter = 7; counter < 15; counter++) {    //Hauteur numero 15
             mBlocks.add(new Bloc(Type.TROU, 12, counter));
         }
+        for (int counter = 0; counter < 25; counter++) {
+            mBlocks.add(new Bloc(Type.TROU, counter, 15));
+
+        }
+
 
         for (int counter = 0; counter < 15; counter++) {
             mBlocks.add(new Bloc(Type.TROU, counter, 0));
