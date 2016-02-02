@@ -20,6 +20,6 @@ public class Bloc {
 
 	public Bloc(Type pType, int pX, int pY) {
 		this.mType = pType;
-		this.mRectangle = new RectF(pX * SIZE, pY * SIZE, (pX + 1) * SIZE, (pY + 1) * SIZE);
+		this.mRectangle = new RectF(pX * SIZE, pY * SIZE, (pX + 3/2) * SIZE, (pY + 3/2) * SIZE);
 	}
 }
