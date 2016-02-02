@@ -123,7 +123,30 @@ public class LabyrintheEngine {
 	// Construit le labyrinthe
 	public List<Bloc> buildLabyrinthe() {
 		mBlocks = new ArrayList<Bloc>();
-		mBlocks.add(new Bloc(Type.TROU, 0, 0));
+        //Le premier paramètre représente la hauteur et le deuxieme représente la largeur du trait
+		for (int counter = 0; counter < 27; counter++) {
+			mBlocks.add(new Bloc(Type.TROU, 0, counter));
+
+		}
+        for (int counter = 0; counter < 27; counter++) {
+            mBlocks.add(new Bloc(Type.TROU, 55, counter));
+
+        }
+
+        for (int counter = 0; counter < 15; counter++) {
+            mBlocks.add(new Bloc(Type.TROU, counter, 0));
+            mBlocks.add(new Bloc(Type.TROU, counter, 27));
+
+        }
+        for (int counter = 20; counter < 35; counter++) {
+            mBlocks.add(new Bloc(Type.TROU, counter, 0));
+
+        }
+        for (int counter = 40; counter < 55; counter++) {
+            mBlocks.add(new Bloc(Type.TROU, counter, 0));
+
+        }
+		/*
 		mBlocks.add(new Bloc(Type.TROU, 0, 1));
 		mBlocks.add(new Bloc(Type.TROU, 0, 2));
 		mBlocks.add(new Bloc(Type.TROU, 0, 3));
@@ -136,16 +159,16 @@ public class LabyrintheEngine {
 		mBlocks.add(new Bloc(Type.TROU, 0, 10));
 		mBlocks.add(new Bloc(Type.TROU, 0, 11));
 		mBlocks.add(new Bloc(Type.TROU, 0, 12));
-		mBlocks.add(new Bloc(Type.TROU, 0, 13));
+		mBlocks.add(new Bloc(Type.TROU, 0, 13));*/
 
 		/*Ajoute*/
-		mBlocks.add(new Bloc(Type.TROU, 0, 30));
+		/*mBlocks.add(new Bloc(Type.TROU, 0, 30));
 		mBlocks.add(new Bloc(Type.TROU, 0, 31));
 		mBlocks.add(new Bloc(Type.TROU, 0, 32));
 		mBlocks.add(new Bloc(Type.TROU, 0, 33));
 
 		mBlocks.add(new Bloc(Type.TROU, 1, 0));
-		mBlocks.add(new Bloc(Type.TROU, 1, 13));
+		mBlocks.add(new Bloc(Type.TROU, 1, 13));*/
 
 		/*Ajoute*/
 		mBlocks.add(new Bloc(Type.TROU, 1, 30));
@@ -179,7 +202,7 @@ public class LabyrintheEngine {
 		mBlocks.add(new Bloc(Type.TROU, 4, 13));
 
 		/*Ajoute*/
-		mBlocks.add(new Bloc(Type.TROU, 4, 30));
+		/*mBlocks.add(new Bloc(Type.TROU, 4, 30));
 		mBlocks.add(new Bloc(Type.TROU, 4, 31));
 		mBlocks.add(new Bloc(Type.TROU, 4, 32));
 		mBlocks.add(new Bloc(Type.TROU, 4, 33));
@@ -271,7 +294,7 @@ public class LabyrintheEngine {
 		mBlocks.add(new Bloc(Type.TROU, 19, 10));
 		mBlocks.add(new Bloc(Type.TROU, 19, 11));
 		mBlocks.add(new Bloc(Type.TROU, 19, 12));
-		mBlocks.add(new Bloc(Type.TROU, 19, 13));
+		mBlocks.add(new Bloc(Type.TROU, 19, 13));*/
 
 		Bloc b = new Bloc(Type.DEPART, 2, 2);
 		mBoule.setInitialRectangle(new RectF(b.getRectangle()));
