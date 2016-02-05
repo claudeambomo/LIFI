@@ -47,7 +47,7 @@ public class LabyrintheView extends SurfaceView implements SurfaceHolder.Callbac
 
 	@Override
 	protected void onDraw(Canvas pCanvas) {
-		// Dessiner le fond de l'�cran en premier
+		// Dessiner le fond de l'écran en premier
 		//pCanvas.drawColor(Color.CYAN);
 		pCanvas.drawColor(Color.GRAY);
 
@@ -85,7 +85,7 @@ public class LabyrintheView extends SurfaceView implements SurfaceHolder.Callbac
 	public void surfaceCreated(SurfaceHolder pHolder) {
 		mThread.keepDrawing = true;
 		mThread.start();
-		// Quand on cr�e la boule, on lui indique les coordonn�es de l'�cran
+		// Quand on crée la boule, on lui indique les coordonnées de l'écran
 		if(mBoule != null ) {
 			this.mBoule.setHeight(getHeight());
 			this.mBoule.setWidth(getWidth());

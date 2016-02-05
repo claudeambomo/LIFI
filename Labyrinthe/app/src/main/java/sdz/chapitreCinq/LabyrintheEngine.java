@@ -71,20 +71,20 @@ public class LabyrintheEngine {
 
 				// Pour tous les blocs du labyrinthe
 				for(Bloc block : mBlocks) {
-					// On cr�e un nouveau rectangle pour ne pas modifier celui du bloc
+					// On crée un nouveau rectangle pour ne pas modifier celui du bloc
 					RectF inter = new RectF(block.getRectangle());
 					if(inter.intersect(hitBox)) {
-						// On agit diff�rement en fonction du type de bloc
+						// On agit différement en fonction du type de bloc
 						switch(block.getType()) {
 						case TROU:
-							//mActivity.showDialog(LabyrintheActivity.DEFEAT_DIALOG);
+							mActivity.showDialog(LabyrintheActivity.DEFEAT_DIALOG);
 							break;
 
 						case DEPART:
 							break;
 
 						case ARRIVEE:
-							mActivity.showDialog(LabyrintheActivity.VICTORY_DIALOG);
+							//mActivity.showDialog(LabyrintheActivity.VICTORY_DIALOG);
 							break;
 						}
 						break;
@@ -105,17 +105,17 @@ public class LabyrintheEngine {
 		mAccelerometre = mManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
 	}
 
-	// Remet � z�ro l'emplacement de la boule
+	// Remet à zéro l'emplacement de la boule
 	public void reset() {
 		mBoule.reset();
 	}
 
-	// Arr�te le capteur
+	// Arrête le capteur
 	public void stop() {
 		mManager.unregisterListener(mSensorEventListener, mAccelerometre);
 	}
 
-	// Red�marre le capteur
+	// Redémarre le capteur
 	public void resume() {
 		mManager.registerListener(mSensorEventListener, mAccelerometre, SensorManager.SENSOR_DELAY_GAME);
 	}
@@ -139,10 +139,9 @@ public class LabyrintheEngine {
         for (int counter = 7; counter < 15; counter++) {    //Hauteur numero 15
             mBlocks.add(new Bloc(Type.TROU, 12, counter));
         }
-        for (int counter = 0; counter < 25; counter++) {
-            mBlocks.add(new Bloc(Type.TROU, counter, 15));
-
-        }
+        /*for (int counter = 0; counter < 3; counter++) {
+            mBlocks.add(new Bloc(Type.TROU, 15, counter));
+        }*/
 
 
         for (int counter = 0; counter < 15; counter++) {
@@ -150,12 +149,20 @@ public class LabyrintheEngine {
             mBlocks.add(new Bloc(Type.TROU, counter, 27));
 
         }
+        for (int counter = 0; counter < 28; counter++) {
+            mBlocks.add(new Bloc(Type.TROU, counter, 15));
+
+        }
+        for (int counter = 33; counter < 39; counter++) {
+            mBlocks.add(new Bloc(Type.TROU, counter, 15));
+
+        }
         for (int counter = 20; counter < 35; counter++) {
             mBlocks.add(new Bloc(Type.TROU, counter, 0));
             mBlocks.add(new Bloc(Type.TROU, counter, 27));
 
         }
-        for (int counter = 40; counter < 55; counter++) {
+        for (int counter = 40; counter < 56; counter++) {
             mBlocks.add(new Bloc(Type.TROU, counter, 0));
             mBlocks.add(new Bloc(Type.TROU, counter, 27));
 
