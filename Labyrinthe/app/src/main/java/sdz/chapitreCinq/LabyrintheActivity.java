@@ -54,13 +54,13 @@ public class LabyrintheActivity extends Activity {
 		switch(id) {
 		case VICTORY_DIALOG:
 			builder.setCancelable(false)
-			.setMessage("Bravo, vous avez gagné !")
-			.setTitle("Champion ! Le roi des Zörglubienotchs est mort grâce à vous !")
-			.setNeutralButton("Recommencer", new DialogInterface.OnClickListener() {
+			.setMessage("Bienvenue sur cette ampoule LIFI")
+			.setTitle("AMPOULE LIFI TROUVEE")
+			.setNeutralButton("retourner", new DialogInterface.OnClickListener() {
 				@Override
 				public void onClick(DialogInterface dialog, int which) {
 					// L'utilisateur peut recommencer s'il le veut
-					mEngine.reset();
+					//mEngine.reset();
 					mEngine.resume();
 				}
 			});
@@ -68,13 +68,14 @@ public class LabyrintheActivity extends Activity {
 
 		case DEFEAT_DIALOG:
 			builder.setCancelable(false)
-			.setMessage("La Terre a été détruite à cause de vos erreurs.")
-			.setTitle("Bah bravo !")
-			.setNeutralButton("Recommencer", new DialogInterface.OnClickListener() {
+			.setMessage("Impossible de traverser un mur")
+			.setTitle("Deplacement non autorise")
+			.setNeutralButton("retourner", new DialogInterface.OnClickListener() {
 				@Override
 				public void onClick(DialogInterface dialog, int which) {
-					mEngine.reset();
-					mEngine.resume();
+					//mEngine.reset();
+					mEngine.stop();
+					//mEngine.resume();
 				}
 			});
 		}
