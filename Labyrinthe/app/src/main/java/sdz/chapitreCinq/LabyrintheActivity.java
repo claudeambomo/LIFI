@@ -74,7 +74,7 @@ public class LabyrintheActivity extends Activity {
 				@Override
 				public void onClick(DialogInterface dialog, int which) {
 					//mEngine.reset();
-					mEngine.stop();
+					mEngine.stop(); //Cette option sera activée pour que le curseur de déplacement reste bien sursa position lorsqu'il tombe sur une ampoule
 					//mEngine.resume();
 				}
 			});

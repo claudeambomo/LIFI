@@ -132,6 +132,10 @@ public class LabyrintheEngine {
             mBlocks.add(new Bloc(Type.TROU, 55, counter));
 
         }
+		//Ajout d'un bloc rouge
+        mBlocks.add(new Bloc(Type.ARRIVEE, 4, 3));
+        mBlocks.add(new Bloc(Type.ARRIVEE, 4, 4));
+
         //Début de la ligne 12
         for (int counter = 0; counter < 3; counter++) {
             mBlocks.add(new Bloc(Type.TROU, 12, counter));
@@ -318,13 +322,13 @@ public class LabyrintheEngine {
 		mBlocks.add(new Bloc(Type.TROU, 19, 13));*/
 
 		Bloc b = new Bloc(Type.DEPART, 2, 2);
-		mBoule.setInitialRectangle(new RectF(b.getRectangle()));
+        mBoule.setInitialRectangle(new RectF(b.getRectangle()));
 		mBlocks.add(b);
 
-		mBlocks.add(new Bloc(Type.ARRIVEE, 8, 11));
+		//mBlocks.add(new Bloc(Type.ARRIVEE, 8, 11));
 
 		/*Ajoute*/
-		mBlocks.add(new Bloc(Type.ARRIVEE, 25, 2));
+		//mBlocks.add(new Bloc(Type.ARRIVEE, 25, 2));
 
 
 

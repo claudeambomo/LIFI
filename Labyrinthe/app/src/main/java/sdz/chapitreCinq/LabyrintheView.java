@@ -124,7 +124,7 @@ public class LabyrintheView extends SurfaceView implements SurfaceHolder.Callbac
 						mSurfaceHolder.unlockCanvasAndPost(canvas);
 				}
 
-				// Pour dessiner � 50 fps
+				// Pour dessiner à 50 fps
 				try {
 					Thread.sleep(20);
 				} catch (InterruptedException e) {}
