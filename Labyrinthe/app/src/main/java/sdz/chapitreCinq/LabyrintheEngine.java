@@ -133,8 +133,10 @@ public class LabyrintheEngine {
 
         }
 		//Ajout d'un bloc rouge
-        mBlocks.add(new Bloc(Type.ARRIVEE, 4, 3));
-        mBlocks.add(new Bloc(Type.ARRIVEE, 4, 4));
+        for (int counter = 3; counter <8; counter++) {
+            mBlocks.add(new Bloc(Type.ARRIVEE, 4, counter));
+
+        }
 
         //Début de la ligne 12
         for (int counter = 0; counter < 3; counter++) {
