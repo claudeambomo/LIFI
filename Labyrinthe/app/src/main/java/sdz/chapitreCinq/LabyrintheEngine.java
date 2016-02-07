@@ -38,9 +38,12 @@ public class LabyrintheEngine {
 		public void onSensorChanged(SensorEvent pEvent) {
 			//float x = pEvent.values[0];
 			//float y = pEvent.values[1];
-			float x = pEvent.values[0];
-			float y = pEvent.values[1];
 
+            float x = 1;
+            float y = 5;
+            System.out.println("La valeur de X est : "+x);
+
+            /*
 			if (compteur <= 15){
 				//Gauche
 				 x = 35;
@@ -61,7 +64,7 @@ public class LabyrintheEngine {
 			if ((compteur % 33 == 0)){
 
 				compteur = 0;
-			}
+			}*/
 
 			compteur ++;
 
@@ -77,14 +80,14 @@ public class LabyrintheEngine {
 						// On agit différement en fonction du type de bloc
 						switch(block.getType()) {
 						case TROU:
-							mActivity.showDialog(LabyrintheActivity.DEFEAT_DIALOG);
+							//mActivity.showDialog(LabyrintheActivity.DEFEAT_DIALOG);
 							break;
 
 						case DEPART:
 							break;
 
 						case ARRIVEE:
-							//mActivity.showDialog(LabyrintheActivity.VICTORY_DIALOG);
+							mActivity.showDialog(LabyrintheActivity.VICTORY_DIALOG);
 							break;
 						}
 						break;
@@ -138,8 +141,9 @@ public class LabyrintheEngine {
 
         }
         for (int counter = 4; counter <8; counter++) {
-            mBlocks.add(new Bloc(Type.ARRIVEE, counter, 2));
-
+            for (int counter2 = 2; counter2 <10; counter2++) {
+                mBlocks.add(new Bloc(Type.ARRIVEE, counter, counter2));
+            }
         }
 
         //Début de la ligne 12
@@ -177,155 +181,7 @@ public class LabyrintheEngine {
             mBlocks.add(new Bloc(Type.TROU, counter, 27));
 
         }
-		/*
-		mBlocks.add(new Bloc(Type.TROU, 0, 1));
-		mBlocks.add(new Bloc(Type.TROU, 0, 2));
-		mBlocks.add(new Bloc(Type.TROU, 0, 3));
-		mBlocks.add(new Bloc(Type.TROU, 0, 4));
-		mBlocks.add(new Bloc(Type.TROU, 0, 5));
-		mBlocks.add(new Bloc(Type.TROU, 0, 6));
-		mBlocks.add(new Bloc(Type.TROU, 0, 7));
-		mBlocks.add(new Bloc(Type.TROU, 0, 8));
-		mBlocks.add(new Bloc(Type.TROU, 0, 9));
-		mBlocks.add(new Bloc(Type.TROU, 0, 10));
-		mBlocks.add(new Bloc(Type.TROU, 0, 11));
-		mBlocks.add(new Bloc(Type.TROU, 0, 12));
-		mBlocks.add(new Bloc(Type.TROU, 0, 13));*/
 
-		/*Ajoute*/
-		/*mBlocks.add(new Bloc(Type.TROU, 0, 30));
-		mBlocks.add(new Bloc(Type.TROU, 0, 31));
-		mBlocks.add(new Bloc(Type.TROU, 0, 32));
-		mBlocks.add(new Bloc(Type.TROU, 0, 33));
-
-		mBlocks.add(new Bloc(Type.TROU, 1, 0));
-		mBlocks.add(new Bloc(Type.TROU, 1, 13));*/
-
-		/*Ajoute*/
-		/*mBlocks.add(new Bloc(Type.TROU, 1, 30));
-		mBlocks.add(new Bloc(Type.TROU, 1, 33));
-
-		mBlocks.add(new Bloc(Type.TROU, 2, 0));
-		mBlocks.add(new Bloc(Type.TROU, 2, 13));*/
-
-		/*Ajoute*/
-		/*mBlocks.add(new Bloc(Type.TROU, 2, 30));
-		mBlocks.add(new Bloc(Type.TROU, 2, 33));
-
-		mBlocks.add(new Bloc(Type.TROU, 3, 0));
-		mBlocks.add(new Bloc(Type.TROU, 3, 13));*/
-
-		/*Ajoute*/
-		/*mBlocks.add(new Bloc(Type.TROU, 3, 30));
-		mBlocks.add(new Bloc(Type.TROU, 3, 33));
-
-		mBlocks.add(new Bloc(Type.TROU, 4, 0));
-		mBlocks.add(new Bloc(Type.TROU, 4, 1));
-		mBlocks.add(new Bloc(Type.TROU, 4, 2));
-		mBlocks.add(new Bloc(Type.TROU, 4, 3));
-		mBlocks.add(new Bloc(Type.TROU, 4, 4));
-		mBlocks.add(new Bloc(Type.TROU, 4, 5));
-		mBlocks.add(new Bloc(Type.TROU, 4, 6));
-		mBlocks.add(new Bloc(Type.TROU, 4, 7));
-		mBlocks.add(new Bloc(Type.TROU, 4, 8));
-		mBlocks.add(new Bloc(Type.TROU, 4, 9));
-		mBlocks.add(new Bloc(Type.TROU, 4, 10));
-		mBlocks.add(new Bloc(Type.TROU, 4, 13));*/
-
-		/*Ajoute*/
-		/*mBlocks.add(new Bloc(Type.TROU, 4, 30));
-		mBlocks.add(new Bloc(Type.TROU, 4, 31));
-		mBlocks.add(new Bloc(Type.TROU, 4, 32));
-		mBlocks.add(new Bloc(Type.TROU, 4, 33));
-
-		mBlocks.add(new Bloc(Type.TROU, 5, 0));
-		mBlocks.add(new Bloc(Type.TROU, 5, 13));
-
-		mBlocks.add(new Bloc(Type.TROU, 6, 0));
-		mBlocks.add(new Bloc(Type.TROU, 6, 13));
-
-		mBlocks.add(new Bloc(Type.TROU, 7, 0));
-		mBlocks.add(new Bloc(Type.TROU, 7, 1));
-		mBlocks.add(new Bloc(Type.TROU, 7, 2));
-		mBlocks.add(new Bloc(Type.TROU, 7, 5));
-		mBlocks.add(new Bloc(Type.TROU, 7, 6));
-		mBlocks.add(new Bloc(Type.TROU, 7, 9));
-		mBlocks.add(new Bloc(Type.TROU, 7, 10));
-		mBlocks.add(new Bloc(Type.TROU, 7, 11));
-		mBlocks.add(new Bloc(Type.TROU, 7, 12));
-		mBlocks.add(new Bloc(Type.TROU, 7, 13));
-
-		mBlocks.add(new Bloc(Type.TROU, 8, 0));
-		mBlocks.add(new Bloc(Type.TROU, 8, 5));
-		mBlocks.add(new Bloc(Type.TROU, 8, 9));
-		mBlocks.add(new Bloc(Type.TROU, 8, 13));
-
-		mBlocks.add(new Bloc(Type.TROU, 9, 0));
-		mBlocks.add(new Bloc(Type.TROU, 9, 5));
-		mBlocks.add(new Bloc(Type.TROU, 9, 9));
-		mBlocks.add(new Bloc(Type.TROU, 9, 13));
-
-		mBlocks.add(new Bloc(Type.TROU, 10, 0));
-		mBlocks.add(new Bloc(Type.TROU, 10, 5));
-		mBlocks.add(new Bloc(Type.TROU, 10, 9));
-		mBlocks.add(new Bloc(Type.TROU, 10, 13));
-
-		mBlocks.add(new Bloc(Type.TROU, 11, 0));
-		mBlocks.add(new Bloc(Type.TROU, 11, 5));
-		mBlocks.add(new Bloc(Type.TROU, 11, 9));
-		mBlocks.add(new Bloc(Type.TROU, 11, 13));
-
-		mBlocks.add(new Bloc(Type.TROU, 12, 0));
-		mBlocks.add(new Bloc(Type.TROU, 12, 1));
-		mBlocks.add(new Bloc(Type.TROU, 12, 2));
-		mBlocks.add(new Bloc(Type.TROU, 12, 3));
-		mBlocks.add(new Bloc(Type.TROU, 12, 4));
-		mBlocks.add(new Bloc(Type.TROU, 12, 5));
-		mBlocks.add(new Bloc(Type.TROU, 12, 9));
-		mBlocks.add(new Bloc(Type.TROU, 12, 8));
-		mBlocks.add(new Bloc(Type.TROU, 12, 13));
-
-		mBlocks.add(new Bloc(Type.TROU, 13, 0));
-		mBlocks.add(new Bloc(Type.TROU, 13, 8));
-		mBlocks.add(new Bloc(Type.TROU, 13, 13));
-
-		mBlocks.add(new Bloc(Type.TROU, 14, 0));
-		mBlocks.add(new Bloc(Type.TROU, 14, 8));
-		mBlocks.add(new Bloc(Type.TROU, 14, 13));
-
-		mBlocks.add(new Bloc(Type.TROU, 15, 0));
-		mBlocks.add(new Bloc(Type.TROU, 15, 8));
-		mBlocks.add(new Bloc(Type.TROU, 15, 13));
-
-		mBlocks.add(new Bloc(Type.TROU, 16, 0));
-		mBlocks.add(new Bloc(Type.TROU, 16, 4));
-		mBlocks.add(new Bloc(Type.TROU, 16, 5));
-		mBlocks.add(new Bloc(Type.TROU, 16, 6));
-		mBlocks.add(new Bloc(Type.TROU, 16, 7));
-		mBlocks.add(new Bloc(Type.TROU, 16, 8));
-		mBlocks.add(new Bloc(Type.TROU, 16, 9));
-		mBlocks.add(new Bloc(Type.TROU, 16, 13));
-
-		mBlocks.add(new Bloc(Type.TROU, 17, 0));
-		mBlocks.add(new Bloc(Type.TROU, 17, 13));
-
-		mBlocks.add(new Bloc(Type.TROU, 18, 0));
-		mBlocks.add(new Bloc(Type.TROU, 18, 13));
-
-		mBlocks.add(new Bloc(Type.TROU, 19, 0));
-		mBlocks.add(new Bloc(Type.TROU, 19, 1));
-		mBlocks.add(new Bloc(Type.TROU, 19, 2));
-		mBlocks.add(new Bloc(Type.TROU, 19, 3));
-		mBlocks.add(new Bloc(Type.TROU, 19, 4));
-		mBlocks.add(new Bloc(Type.TROU, 19, 5));
-		mBlocks.add(new Bloc(Type.TROU, 19, 6));
-		mBlocks.add(new Bloc(Type.TROU, 19, 7));
-		mBlocks.add(new Bloc(Type.TROU, 19, 8));
-		mBlocks.add(new Bloc(Type.TROU, 19, 9));
-		mBlocks.add(new Bloc(Type.TROU, 19, 10));
-		mBlocks.add(new Bloc(Type.TROU, 19, 11));
-		mBlocks.add(new Bloc(Type.TROU, 19, 12));
-		mBlocks.add(new Bloc(Type.TROU, 19, 13));*/
 
 		Bloc b = new Bloc(Type.DEPART, 2, 2);
         mBoule.setInitialRectangle(new RectF(b.getRectangle()));

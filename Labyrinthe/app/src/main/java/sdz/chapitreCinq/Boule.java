@@ -41,6 +41,7 @@ public class Boule {
 	public float getX() {
 		return mX;
 	}
+
 	public void setPosX(float pPosX) {
 		mX = pPosX;
 
@@ -118,6 +119,8 @@ public class Boule {
 		
 		setPosX(mX + mSpeedY);
 		setPosY(mY + mSpeedX);
+		//setPosX(pX);
+		//setPosY(pY);
 		
 		// Met à jour les coordonnées du rectangle de collision
 		mRectangle.set(mX - RAYON, mY - RAYON, mX + RAYON, mY + RAYON);

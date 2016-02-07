@@ -61,7 +61,7 @@ public class LabyrintheActivity extends Activity {
 				public void onClick(DialogInterface dialog, int which) {
 					// L'utilisateur peut recommencer s'il le veut
 					//mEngine.reset();
-					mEngine.resume();
+					//mEngine.resume();
 				}
 			});
 			break;
@@ -74,7 +74,7 @@ public class LabyrintheActivity extends Activity {
 				@Override
 				public void onClick(DialogInterface dialog, int which) {
 					//mEngine.reset();
-					mEngine.stop(); //Cette option sera activée pour que le curseur de déplacement reste bien sursa position lorsqu'il tombe sur une ampoule
+					//mEngine.stop(); //Cette option sera activée pour que le curseur de déplacement reste bien sursa position lorsqu'il tombe sur une ampoule
 					//mEngine.resume();
 				}
 			});
@@ -85,6 +85,6 @@ public class LabyrintheActivity extends Activity {
 	@Override
 	public void onPrepareDialog (int id, Dialog box) {
 		// A chaque fois qu'une boîte de dialogue est lancée, on arrête le moteur physique
-		mEngine.stop();
+		//mEngine.stop();
 	}
 }
