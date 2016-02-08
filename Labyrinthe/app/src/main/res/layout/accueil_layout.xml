@@ -6,7 +6,28 @@
     >
 
 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:id="@+id/loginEdit"
+        android:layout_gravity="center_horizontal" />
 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/passwordEdit"
+        android:layout_gravity="center_horizontal" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Access LIFI"
+        android:id="@+id/okButton"
+        android:layout_gravity="center_horizontal" />
 
 </LinearLayout>
