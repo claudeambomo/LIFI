@@ -41,7 +41,7 @@ public class LabyrintheEngine {
 
             //float x = 1;
             //float y = 5;
-            System.out.println("La valeur de X est : "+x);
+            //System.out.println("La valeur de X est : "+x);
 
             /*
 			if (compteur <= 15){
@@ -66,7 +66,8 @@ public class LabyrintheEngine {
 				compteur = 0;
 			}*/
 
-			compteur ++;
+			//compteur ++;
+
 
 			if(mBoule != null) {
 				// On met � jour les coordonn�es de la boule
@@ -136,15 +137,15 @@ public class LabyrintheEngine {
 
         }
 		//Ajout d'un bloc rouge
-        for (int counter = 2; counter <10; counter++) {
+        for (int counter = 6; counter <7; counter++) {
             mBlocks.add(new Bloc(Type.ARRIVEE, 4, counter));
 
         }
-        for (int counter = 4; counter <8; counter++) {
-            for (int counter2 = 2; counter2 <10; counter2++) {
+        /*for (int counter = 4; counter <5; counter++) {
+            for (int counter2 = 2; counter2 <3; counter2++) {
                 mBlocks.add(new Bloc(Type.ARRIVEE, counter, counter2));
             }
-        }
+        }*/
 
         //Début de la ligne 12
         for (int counter = 0; counter < 3; counter++) {
@@ -153,9 +154,9 @@ public class LabyrintheEngine {
         for (int counter = 7; counter < 15; counter++) {    //Hauteur numero 15
             mBlocks.add(new Bloc(Type.TROU, 12, counter));
         }
-        /*for (int counter = 0; counter < 3; counter++) {
+        for (int counter = 0; counter < 3; counter++) {
             mBlocks.add(new Bloc(Type.TROU, 15, counter));
-        }*/
+        }
 
 
         for (int counter = 0; counter < 15; counter++) {

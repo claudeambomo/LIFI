@@ -65,7 +65,20 @@ public class LabyrintheView extends SurfaceView implements SurfaceHolder.Callbac
 					mPaint.setColor(Color.BLACK);
 					break;
 				}
-				pCanvas.drawRect(b.getRectangle(), mPaint);
+				//Commenté
+				//pCanvas.drawRect(b.getRectangle(), mPaint);
+
+				//AJoutéé
+				if(b.getType() == Bloc.Type.ARRIVEE) {
+					//pCanvas.drawCircle(mBoule.getX(), mBoule.getY(), Boule.RAYON, mPaint);
+					//pCanvas.drawRect(b.getRectangle(), mPaint);
+					pCanvas.drawCircle(b.getRectangle().centerX(),b.getRectangle().centerY(),Boule.RAYON*3,mPaint);
+				}
+				else
+				{
+					pCanvas.drawRect(b.getRectangle(), mPaint);
+				}
+
 			}
 		}
 

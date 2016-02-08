@@ -5,7 +5,8 @@ import android.graphics.RectF;
 
 public class Boule {
 	// Rayon de la boule
-	public static final int RAYON = 15;
+	public static final int RAYON = 10;
+
 	
 	// Couleur de la boule
 	//private int mCouleur = Color.GREEN;
@@ -47,12 +48,12 @@ public class Boule {
 
 		// Si la boule sort du cadre, on rebondit
 		if(mX < RAYON) {
-			mX = RAYON;
+			///mX = RAYON;
 			// Rebondir, c'est changer la direction de la balle
-			mSpeedY = -mSpeedY / REBOND;
+			///mSpeedY = -mSpeedY / REBOND;
 		} else if(mX > mWidth - RAYON) {
-			mX = mWidth - RAYON;
-			mSpeedY = -mSpeedY / REBOND;
+			///mX = mWidth - RAYON;
+			///mSpeedY = -mSpeedY / REBOND;
 		}
 	}
 	
@@ -88,13 +89,16 @@ public class Boule {
 	}
 	
 	// Taille de l'écran en hauteur
-	private int mHeight = -1;
+	//private int mHeight = -1;
+	private int mHeight = 20;
+
 	public void setHeight(int pHeight) {
 		this.mHeight = pHeight;
 	}
 	
 	// Taille de l'écran en largeur
-	private int mWidth = -1;
+	//private int mWidth = -1;
+	private int mWidth = 20;
 	public void setWidth(int pWidth) {
 		this.mWidth = pWidth;
 	}
