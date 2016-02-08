@@ -36,11 +36,11 @@ public class LabyrintheEngine {
 
 		@Override
 		public void onSensorChanged(SensorEvent pEvent) {
-			//float x = pEvent.values[0];
-			//float y = pEvent.values[1];
+			float x = pEvent.values[0];
+			float y = pEvent.values[1];
 
-            float x = 1;
-            float y = 5;
+            //float x = 1;
+            //float y = 5;
             System.out.println("La valeur de X est : "+x);
 
             /*
