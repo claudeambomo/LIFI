@@ -155,7 +155,7 @@
     <string name="abc_toolbar_collapse_description">Collapse</string>
     <!-- From: file:/C:/Users/CLAUDE/AndroidStudioProjects/LIFI/Labyrinthe/app/src/main/res/values/strings.xml -->
     <eat-comment/>
-    <string name="app_name">Labyrinthe</string>
+    <string name="app_name">Geo LIFI</string>
     <string name="hello">Hello World, SurfaceViewExampleActivity!</string>
     <!-- From: file:/C:/Users/CLAUDE/AndroidStudioProjects/LIFI/Labyrinthe/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
