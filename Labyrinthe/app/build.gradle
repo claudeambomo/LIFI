@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "sdz.chapitreCinq"
-        minSdkVersion 19
+        minSdkVersion 16
         targetSdkVersion 21
     }
 

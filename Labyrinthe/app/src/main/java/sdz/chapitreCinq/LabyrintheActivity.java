@@ -9,9 +9,9 @@ import android.content.DialogInterface;
 import android.os.Bundle;
 
 public class LabyrintheActivity extends Activity {
-	// Identifiant de la boîte de dialogue de victoire
+	// Identifiant de la boite de dialogue de victoire
 	public static final int VICTORY_DIALOG = 0;
-	// Identifiant de la boîte de dialogue de défaite
+	// Identifiant de la boï¿½te de dialogue de dï¿½faite
 	public static final int DEFEAT_DIALOG = 1;
 
 	// Le moteur graphique du jeu
@@ -74,7 +74,7 @@ public class LabyrintheActivity extends Activity {
 				@Override
 				public void onClick(DialogInterface dialog, int which) {
 					//mEngine.reset();
-					//mEngine.stop(); //Cette option sera activée pour que le curseur de déplacement reste bien sursa position lorsqu'il tombe sur une ampoule
+					//mEngine.stop(); //Cette option sera activï¿½e pour que le curseur de dï¿½placement reste bien sursa position lorsqu'il tombe sur une ampoule
 					//mEngine.resume();
 				}
 			});
@@ -84,7 +84,7 @@ public class LabyrintheActivity extends Activity {
 
 	@Override
 	public void onPrepareDialog (int id, Dialog box) {
-		// A chaque fois qu'une boîte de dialogue est lancée, on arrête le moteur physique
+		// A chaque fois qu'une boï¿½te de dialogue est lancï¿½e, on arrï¿½te le moteur physique
 		//mEngine.stop();
 	}
 }

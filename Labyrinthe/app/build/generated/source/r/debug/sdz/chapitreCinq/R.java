@@ -1298,6 +1298,7 @@ containing a value of this type.
         public static final int abc_textfield_search_default_mtrl_alpha=0x7f020031;
         public static final int abc_textfield_search_material=0x7f020032;
         public static final int ic_launcher=0x7f020033;
+        public static final int lifi_launcher=0x7f020034;
     }
     public static final class id {
         public static final int action_bar=0x7f0b0031;
@@ -1334,10 +1335,13 @@ containing a value of this type.
         public static final int image=0x7f0b0023;
         public static final int listMode=0x7f0b0009;
         public static final int list_item=0x7f0b0025;
+        public static final int loginEdit=0x7f0b003f;
         public static final int middle=0x7f0b0015;
         public static final int never=0x7f0b0019;
         public static final int none=0x7f0b000e;
         public static final int normal=0x7f0b000a;
+        public static final int okButton=0x7f0b0041;
+        public static final int passwordEdit=0x7f0b0040;
         public static final int progress_circular=0x7f0b0005;
         public static final int progress_horizontal=0x7f0b0006;
         public static final int radio=0x7f0b002b;
