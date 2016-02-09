@@ -30,7 +30,7 @@ public class LabyrintheEngine {
 	private Sensor mAccelerometre = null;
 
 	//Ajoute
-	//int compteur = 1;
+	
 
 	SensorEventListener mSensorEventListener = new SensorEventListener() {
 
@@ -38,35 +38,6 @@ public class LabyrintheEngine {
 		public void onSensorChanged(SensorEvent pEvent) {
 			float x = pEvent.values[0];
 			float y = pEvent.values[1];
-
-            //float x = 1;
-            //float y = 5;
-            //System.out.println("La valeur de X est : "+x);
-
-            /*
-			if (compteur <= 15){
-				//Gauche
-				 x = 35;
-				 y = 00;
-			}
-			else if (compteur > 15 && compteur <= 21) {
-				//descend
-				x = 00;
-				y = 35;
-
-			}
-			else if (compteur > 21) {
-				//droite
-				x = -35;
-				y = 00;
-
-			}
-			if ((compteur % 33 == 0)){
-
-				compteur = 0;
-			}*/
-
-			//compteur ++;
 
 
 			if(mBoule != null) {
@@ -82,8 +53,14 @@ public class LabyrintheEngine {
 						switch(block.getType()) {
 						case TROU:
 							//mActivity.showDialog(LabyrintheActivity.DEFEAT_DIALOG);
-							mBoule.putXAndY(hitBox.centerX()- mBoule.RAYON,hitBox.centerY() - mBoule.RAYON);
-                            System.out.println (hitBox.centerX()  + hitBox.centerY() );
+                            if (block.getRectangle().contains(10 , 10)){
+                                //mBoule.reset();
+                                mBoule.reset();
+                            }
+							mBoule.putXAndY(hitBox.centerX() -2*hitBox.centerX(), hitBox.centerY() - 2*hitBox.centerX());
+                            //mBoule.putXAndY()
+                            //mBoule.reset();
+                            //System.out.println (hitBox.centerX() + "et" + hitBox.centerY() );
 							break;
 
 
@@ -130,6 +107,7 @@ public class LabyrintheEngine {
 	// Construit le labyrinthe
 	public List<Bloc> buildLabyrinthe() {
 		mBlocks = new ArrayList<Bloc>();
+
         //Le premier paramètre représente la hauteur et le deuxième représente la largeur du trait
 		for (int counter = 0; counter < 27; counter++) {
 			mBlocks.add(new Bloc(Type.TROU, 0, counter));
@@ -151,15 +129,16 @@ public class LabyrintheEngine {
         }*/
 
         //Début de la ligne 12
-        for (int counter = 0; counter < 5; counter++) {
-            mBlocks.add(new Bloc(Type.TROU, 12, counter));
-        }
-        for (int counter = 7; counter < 15; counter++) {    //Hauteur numero 15
-            mBlocks.add(new Bloc(Type.TROU, 12, counter));
-        }
         for (int counter = 0; counter < 3; counter++) {
-            mBlocks.add(new Bloc(Type.TROU, 15, counter));
+            mBlocks.add(new Bloc(Type.TROU, 12, counter));
         }
+        /*for (int counter = 10; counter < 15; counter++) {    //Hauteur numero 15
+            mBlocks.add(new Bloc(Type.TROU, 12, counter));
+        }*/
+
+        /*for (int counter = 0; counter < 3; counter++) {
+            mBlocks.add(new Bloc(Type.TROU, 15, counter));
+        }*/
 
 
         for (int counter = 0; counter < 15; counter++) {

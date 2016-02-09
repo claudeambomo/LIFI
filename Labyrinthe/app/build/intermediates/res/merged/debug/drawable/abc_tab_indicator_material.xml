@@ -18,4 +18,4 @@
     <item android:state_selected="true" android:drawable="@drawable/abc_tab_indicator_mtrl_alpha" />
     <item android:drawable="@android:color/transparent" />
 </selector>
-<!-- From: file:/C:/Users/CLAUDE/AndroidStudioProjects/LIFI/Labyrinthe/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable/abc_tab_indicator_material.xml -->
+<!-- From: file:/Users/arnoldfotsing/Documents/Ecole_Ingénieurs/Ing_3A/PROJETS/GEOLOCALISATION_VIA_LIFI/LIFI/Labyrinthe/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable/abc_tab_indicator_material.xml -->
