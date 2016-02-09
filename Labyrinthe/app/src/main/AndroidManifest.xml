@@ -15,23 +15,26 @@
     <application
         android:icon="@drawable/lifi_launcher"
         android:label="@string/app_name" >
-        <activity
-            android:name="sdz.chapitreCinq.LabyrintheActivity"
-            android:configChanges="orientation"
-            android:label="@string/app_name"
-            android:screenOrientation="landscape" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
         <activity android:name=".accueil">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <!-- Ci dessous le code de la seconde activité, pour retourner l'écran, rajouter
+            le texte en commentaire dans la déclaration de l'activité-->
+        <activity
+            android:name="sdz.chapitreCinq.LabyrintheActivity"
+            android:configChanges="orientation"
+            android:label="@string/app_name">
+            <!--android:screenOrientation="landscape" -->
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+               <!--  <category android:name="android.intent.category.LAUNCHER" />-->
+            </intent-filter>
+        </activity>
+
     </application>
 
 </manifest>
