@@ -30,7 +30,7 @@ public class LabyrintheEngine {
 	private Sensor mAccelerometre = null;
 
 	//Ajoute
-	int compteur = 1;
+	//int compteur = 1;
 
 	SensorEventListener mSensorEventListener = new SensorEventListener() {
 
@@ -82,7 +82,10 @@ public class LabyrintheEngine {
 						switch(block.getType()) {
 						case TROU:
 							//mActivity.showDialog(LabyrintheActivity.DEFEAT_DIALOG);
+							mBoule.putXAndY(hitBox.centerX()- mBoule.RAYON,hitBox.centerY() - mBoule.RAYON);
+                            System.out.println (hitBox.centerX()  + hitBox.centerY() );
 							break;
+
 
 						case DEPART:
 							break;
@@ -148,7 +151,7 @@ public class LabyrintheEngine {
         }*/
 
         //Début de la ligne 12
-        for (int counter = 0; counter < 3; counter++) {
+        for (int counter = 0; counter < 5; counter++) {
             mBlocks.add(new Bloc(Type.TROU, 12, counter));
         }
         for (int counter = 7; counter < 15; counter++) {    //Hauteur numero 15
