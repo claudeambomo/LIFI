@@ -16,8 +16,9 @@ public class Boule {
 	}
 	
 	// Vitesse maximale autorisée pour la boule
-	private static final float MAX_SPEED = 5.0f; //Ancienne valeur 20.0f
-	
+	//private static final float MAX_SPEED = 20.0f;
+    private static final float MAX_SPEED = 5.0f;
+
 	// Permet à la boule d'accélérer moins vite
 	private static final float COMPENSATEUR = 12.0f; //Ancienne valeur : 8.0f
 	
@@ -43,20 +44,6 @@ public class Boule {
 		return mX;
 	}
 
-	public void setPosX(float pPosX) {
-		mX = pPosX;
-
-		// Si la boule sort du cadre, on rebondit
-		if(mX < RAYON) {
-			///mX = RAYON;
-			// Rebondir, c'est changer la direction de la balle
-			///mSpeedY = -mSpeedY / REBOND;
-		} else if(mX > mWidth - RAYON) {
-			///mX = mWidth - RAYON;
-			///mSpeedY = -mSpeedY / REBOND;
-		}
-	}
-	
 	// Coordonn�es en y
 	private float mY;
 	public float getY() {
@@ -72,7 +59,20 @@ public class Boule {
 			mY = mHeight - RAYON;
 			mSpeedX = -mSpeedX / REBOND;
 		}
+
 	}
+    public void setPosX(float pPosX) {
+        mX = pPosX;
+        // Si la boule sort du cadre, on rebondit
+        if(mX < RAYON) {
+            mX = RAYON;
+            // Rebondir, c'est changer la direction de la balle
+            mSpeedY = -mSpeedY / REBOND;
+        } else if(mX > mWidth - RAYON) {
+            mX = mWidth - RAYON;
+            mSpeedY = -mSpeedY / REBOND;
+        }
+    }
 	
 	// Vitesse sur l'axe x
 	private float mSpeedX = 0;
@@ -89,16 +89,16 @@ public class Boule {
 	}
 	
 	// Taille de l'écran en hauteur
-	//private int mHeight = -1;
-	private int mHeight = 20;
+	private int mHeight = -1;
+	//private int mHeight = 20;
 
 	public void setHeight(int pHeight) {
 		this.mHeight = pHeight;
 	}
 	
 	// Taille de l'écran en largeur
-	//private int mWidth = -1;
-	private int mWidth = 20;
+	private int mWidth = -1;
+	//private int mWidth = 20;
 	public void setWidth(int pWidth) {
 		this.mWidth = pWidth;
 	}

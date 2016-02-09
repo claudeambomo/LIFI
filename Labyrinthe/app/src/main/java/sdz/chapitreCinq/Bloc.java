@@ -21,7 +21,8 @@ public class Bloc {
 	public Bloc(Type pType, int pX, int pY) {
 		this.mType = pType;
 		this.mRectangle = new RectF(pX * SIZE, pY * SIZE, (pX + 3/2) * SIZE, (pY + 3/2) * SIZE);
-		//Rajoute par Claude
+
+		//Rajout� par Claude
 		/*if (this.mType == Type.ARRIVEE){
 			this.mRectangle = new RectF((pX * SIZE), (pY * SIZE)*3, ((pX + 3/2) * SIZE)*3, ((pY + 3/2) * SIZE));
 		}
