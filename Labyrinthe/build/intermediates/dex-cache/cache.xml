@@ -2,32 +2,46 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\CLAUDE\AndroidStudioProjects\LIFI\Labyrinthe\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\jars\classes.jar"
+        jar="C:\Users\CLAUDE\AndroidStudioProjects\LIFI\Labyrinthe\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\libs\internal_impl-23.1.1.jar"
         jumboMode="false"
-        revision="23.0.1"
-        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
-        <dex dex="C:\Users\CLAUDE\AndroidStudioProjects\LIFI\Labyrinthe\app\build\intermediates\pre-dexed\debug\classes-bca2461388460f88b325bd93e62d1dbdf37165b3.jar" />
+        revision="23.0.2"
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="C:\Users\CLAUDE\AndroidStudioProjects\LIFI\Labyrinthe\app\build\intermediates\pre-dexed\debug\internal_impl-23.1.1_bfa4219b43178e1c5f03e2d99b2159a3be63c983.jar" />
     </item>
     <item
-        jar="C:\Users\CLAUDE\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
+        jar="C:\Users\CLAUDE\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.1.1\support-annotations-23.1.1.jar"
         jumboMode="false"
-        revision="23.0.1"
-        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
-        <dex dex="C:\Users\CLAUDE\AndroidStudioProjects\LIFI\Labyrinthe\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-382ab586fcb9b925aa72469fef35f9c2806206aa.jar" />
+        revision="23.0.2"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="C:\Users\CLAUDE\AndroidStudioProjects\LIFI\Labyrinthe\app\build\intermediates\pre-dexed\debug\support-annotations-23.1.1_3ff340c09792eddb6b92bb06b30e1e7e4aafb6da.jar" />
     </item>
     <item
-        jar="C:\Users\CLAUDE\AndroidStudioProjects\LIFI\Labyrinthe\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\jars\libs\internal_impl-21.0.3.jar"
+        jar="C:\Users\CLAUDE\AndroidStudioProjects\LIFI\Labyrinthe\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\classes.jar"
         jumboMode="false"
-        revision="23.0.1"
-        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
-        <dex dex="C:\Users\CLAUDE\AndroidStudioProjects\LIFI\Labyrinthe\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-c62e020e851aa3ad79e35b1462e80dae3a880aaa.jar" />
+        revision="23.0.2"
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="C:\Users\CLAUDE\AndroidStudioProjects\LIFI\Labyrinthe\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.1.1_5d409c96955ddc9e4f76add2578eeb1855031d21.jar" />
     </item>
     <item
-        jar="C:\Users\CLAUDE\AndroidStudioProjects\LIFI\Labyrinthe\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\jars\classes.jar"
+        jar="C:\Users\CLAUDE\AndroidStudioProjects\LIFI\Labyrinthe\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.1.1\jars\classes.jar"
         jumboMode="false"
-        revision="23.0.1"
-        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
-        <dex dex="C:\Users\CLAUDE\AndroidStudioProjects\LIFI\Labyrinthe\app\build\intermediates\pre-dexed\debug\classes-e67e24a81a87b7e8c9adb946a3b8fb024835f008.jar" />
+        revision="23.0.2"
+        sha1="09c5e804bc67fc0580360043dff067df574a60d4">
+        <dex dex="C:\Users\CLAUDE\AndroidStudioProjects\LIFI\Labyrinthe\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-23.1.1_2c61bb52b6652c033865f3623aeb7e89cd2725b8.jar" />
+    </item>
+    <item
+        jar="C:\Users\CLAUDE\AndroidStudioProjects\LIFI\Labyrinthe\app\build\intermediates\exploded-aar\com.android.support\design\23.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="379471b2bd17d9737c050345c08e8c7d16589784">
+        <dex dex="C:\Users\CLAUDE\AndroidStudioProjects\LIFI\Labyrinthe\app\build\intermediates\pre-dexed\debug\com.android.support-design-23.1.1_e3852a77563db67648521257b9d613f8596b9ce6.jar" />
+    </item>
+    <item
+        jar="C:\Users\CLAUDE\AndroidStudioProjects\LIFI\Labyrinthe\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
+        <dex dex="C:\Users\CLAUDE\AndroidStudioProjects\LIFI\Labyrinthe\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.1.1_d6a561b6a712042feb8efd5dbe675deda41a8922.jar" />
     </item>
 
 </items>
