@@ -12,7 +12,7 @@ import android.widget.Button;
 /**
  * Created by CLAUDE on 08/02/2016.
  */
-public class accueil extends AppCompatActivity {
+public class accueil extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
