@@ -8,8 +8,10 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
+import android.widget.Button;
 
 public class LabyrintheView extends SurfaceView implements SurfaceHolder.Callback {
+
 	Boule mBoule;
 	public Boule getBoule() {
 		return mBoule;
@@ -43,6 +45,7 @@ public class LabyrintheView extends SurfaceView implements SurfaceHolder.Callbac
 		mPaint.setStyle(Paint.Style.FILL);
 
 		mBoule = new Boule();
+
 	}
 
 	@Override
@@ -117,6 +120,7 @@ public class LabyrintheView extends SurfaceView implements SurfaceHolder.Callbac
 		}
 		
 	}
+
 
 	private class DrawingThread extends Thread {
 		boolean keepDrawing = true;
